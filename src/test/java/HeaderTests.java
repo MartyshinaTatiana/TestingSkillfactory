@@ -13,9 +13,8 @@ import java.util.ArrayList;
 public class HeaderTests {
     public static final WebDriver driver;
     public static final MainPage mainPage;
-    public static final CoursesOnMainPage onlineCourses;
+
     public static final TestingCoursesPage testingCoursesPage;
-    public static final ButtonsInHeader buttonsInHeader;
 
 
     static {
@@ -24,9 +23,9 @@ public class HeaderTests {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         mainPage = new MainPage(driver);
-        onlineCourses = new CoursesOnMainPage(driver);
+
         testingCoursesPage = new TestingCoursesPage(driver);
-        buttonsInHeader = new ButtonsInHeader(driver);
+
     }
 
     @AfterAll
@@ -66,6 +65,9 @@ public class HeaderTests {
         String expectedUrl = "https://skillfactory.ru/free-events";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Возврат на главную страницу со страницы бесплатных курсов
+     */
     @Test
     public void availabilityReturnFromFree() {
         mainPage.open();
@@ -91,6 +93,9 @@ public class HeaderTests {
         String expectedUrl = "https://skillfactory.ru/career-center";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Возврат на главную страницу со страницы "Карьерный центр"
+     */
     @Test
     public void availabilityReturnFromCareerCenter() {
         mainPage.open();
@@ -103,6 +108,9 @@ public class HeaderTests {
         String expectedUrl = "https://skillfactory.ru/";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+        Переход по кнопке "Контакты" в Headere главной страницы на страницу контактов
+         */
     @Test
     public void availabilityMainMenuContacts() {
         mainPage.open();
@@ -113,6 +121,9 @@ public class HeaderTests {
         String expectedUrl = "https://skillfactory.ru/contacts";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Возврат на главную страницу со страницы Контактов
+     */
     @Test
     public void availabilityReturnFromContacts() {
         mainPage.open();
@@ -125,6 +136,9 @@ public class HeaderTests {
         String expectedUrl = "https://skillfactory.ru/";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+     Переход по кнопке "Медиа" в Headere главной страницы на страницу статей о курсах
+       */
     @Test
     public void availabilityMainMenuMedia() {
         mainPage.open();
@@ -135,6 +149,9 @@ public class HeaderTests {
         String expectedUrl = "https://blog.skillfactory.ru/";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Переход по кнопке "Професии" в Headere страницы "Медиа" на страницу статей о профессиях
+        */
     @Test
     public void availabilityProfessionMedia() {
         mainPage.open();
@@ -147,6 +164,9 @@ public class HeaderTests {
         String expectedUrl = "https://blog.skillfactory.ru/profession/";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Переход по кнопке "Корпоративное обучение" в Headere главной страницы на страницу курсов
+     */
     @Test
     public void availabilityMainMenuCorpStudy() {
         mainPage.open();
@@ -157,6 +177,9 @@ public class HeaderTests {
         String expectedUrl = "https://new.skillfactory.ru/corporativnoye-obuchenye";
         assertEquals(expectedUrl, currentUrl);
     }
+    /*
+    Возврат на главную страницу со страницы "Корпоративного обучения"
+     */
     @Test
     public void availabilityReturnFromCorpStudy() {
         mainPage.open();

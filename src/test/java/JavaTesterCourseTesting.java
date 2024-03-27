@@ -40,9 +40,9 @@ public class JavaTesterCourseTesting {
     }
 
     /*
-    Java QA course page is available by the path:
-    Main page - > Main menu -> Online courses -> All online courses -> Testing -> Java tester card.
-     */
+   Переход на страницу курса "Тестировщик на Java"  Главная страница - >Главное меню- >Онлайн-курсы- >Все онлайн-курсы- > Тестирование -> Тестировщик на Java.
+    */
+
     @Test
     public void availabilityMainMenuAllCoursesTestingJavaTester() {
         mainPage.open();
@@ -58,9 +58,9 @@ public class JavaTesterCourseTesting {
     }
 
     /*
-    Java QA course page is available by the path:
-    Main page - > Main menu -> Online courses -> All online courses -> Java tester card.
-     */
+   Переход на страницу курса "Тестировщик на Java"  Главная страница - >Главное меню- >Онлайн-курсы- > Все онлайн курсы -> Тестировщик на Java.
+    */
+
     @Test
     public void availabilityMainMenuAllCoursesJavaTester() {
         mainPage.open();
@@ -75,9 +75,9 @@ public class JavaTesterCourseTesting {
     }
 
     /*
-    Java QA course page is available by the path:
-    Main page - > Main menu -> Online courses -> Testing -> Java tester card.
-     */
+   Переход на страницу курса "Тестировщик на Java"  Главная страница - >Главное меню- >Онлайн-курсы- > Тестирование -> Тестировщик на Java.
+    */
+
     @Test
     public void availabilityMainMenuTestingJavaTester() {
         mainPage.open();
@@ -92,7 +92,7 @@ public class JavaTesterCourseTesting {
     }
 
     /*
-    Java QA course page is available by the path: Main page - > Testing -> Java tester card.
+    Переход на страницу курса "Тестировщик на Java"  Главная страница - > Тестирование -> Тестировщик на Java.
      */
     @Test
     public void availabilityTestingJavaTester() {
